@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Deep Thought</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="navbar">
+        <img src="images/logo.svg" />
+        <i class="material-icons" style="color:white">account_circle</i>
+        <i class="material-icons">notifications</i>
+        <i class="material-icons">settings</i>
+        <i class="material-icons">home</i>
+        <span class="ham" style="font-size:20px;cursor:pointer" onclick="openNav()">&#9776;</span>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Task Heading 1</a>
+        <a href="#">Task Heading 2</a>
+        <a href="#">Task Heading 3</a>
+        <a href="#">Task Heading 4</a>
+        <a href="#">Task Heading 5</a>
+        <a href="#">Task Heading 6</a>
+        <a href="#">Task Heading 7</a>
+        <a href="#">Task Heading 8</a>
+        <a href="#">Task Heading 9</a>
+    </div>
+    <div id="th1">
+        <h3 class="th1c">TASK HEADING 1</h3>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and
+            typesetting industry.Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s
+            when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book. It has
+            survived not only five centuries,but also the leap into
+            electronuc typesetting,remaining essentially unchanges.
+            It was popularised in the 1960s with the release of Letraset
+            sheets containg Lorem Ipsum Passages, and more
+            recently with desktop.
+        </p>
+        <div class="inp">
+            <h3 class="th1c">TASK HEADING 2</h3>
+            <h4 style="font-size:20px">Sub Thread</h4>
+            <input type="text" size="50px" placeholder="Enter text here" />
+            <h4 style="font-size:20px">Sub Interpretation 1</h4>
+            <input type="text" size="50px" placeholder="Enter text here" />
+            <br />
+            <br />
+            <label for="Category">Category:</label>
+            <input list="Category" name="category" placeholder="Select a Category">
+            <datalist id="Category">
+                <option value="Category 1">
+                <option value="Category 2">
+                <option value="Category 3">
+                <option value="Category 4">
+            </datalist>
+            <label for="Process">Process:</label>
+            <input list="Process" name="Process" placeholder="Select a Process">
+            <datalist id="Process">
+                <option value="Process 1">
+                <option value="Process 2">
+                <option value="Process 3">
+                <option value="Process 4">
+            </datalist>
+            <button type="button" style="margin-left:30px">+ Sub thread</button>
+            <br />
+            <h4 style="font-size:20px">Summary for Thread A</h4>
+            <textarea id="Summary" name="Summary" rows="4" cols="30" placeholder="Enter text here"></textarea>
+            <br />
+            <br />
+            <label for="Emotion">Emotion:</label>
+            <input list="Emotion" name="Emotion" placeholder="Select a Emotion">
+            <datalist id="Emotion">
+                <option value="Emotion 1">
+                <option value="Emotion 2">
+                <option value="Emotion 3">
+                <option value="Emotion 4">
+            </datalist>
+            <button type="button" style="margin-left:30px">+ New Thread</button>
+        </div>
+        <div>
+            <br />
+            <h3 class="th1c">TASK HEADING 3</h3>
+            <br />
+            <textarea id="task3" name="task3" rows="10" cols="50"
+                placeholder="Reflect as per given guidelines"></textarea>
+        </div>
+        <div>
+            <br />
+            <h3 class="th1c">TASK HEADING 4</h3>
+            <br />
+            <iframe src="./Building our own Virtual Assistant using Python (2).pdf"
+                style="margin-left:350px" width="50%" height="500px">
+            </iframe>
+        </div>
+        <div>
+            <br />
+            <h3 class="th1c">TASK HEADING 7</h3>
+            <br />
+            <h4>Introduction</h4>
+            <textarea id="task7" name="task7" rows="3" cols="20" placeholder="Enter Introduction"></textarea>
+            <h4>Thread A</h4>
+            <p1 style="font-size:15px">Example 1</p1>
+            <br />
+            <textarea id="task7" name="task7" rows="3" cols="20" placeholder="Enter text here"></textarea>
+            <br />
+            <button type="button" style="margin-top:10px">+ Example</button>
+            <br />
+            <br />
+            <p1 style="font-size:15px">Argument for Thread A</p1>
+            <br />
+            <textarea id="task7" name="task7" rows="3" cols="20" placeholder="Enter text here"></textarea>
+            <br />
+            <button type="button" style="margin-left:260px;margin-top:10px">+ New Thread</button>
+            <h4>Conclusion</h4>
+            <textarea id="task7" name="task7" rows="3" cols="20" placeholder="Enter Conclusion"></textarea>
+        </div>
+        <div>
+            <h3 class="th1c">TASK HEADING 8</h3>
+            <audio controls style="margin-left:450px;margin-top:30px">
+                <source src="fame.mp3" type="audio/mp3" />
+            </audio>
+        </div>
+        <div>
+            <h3 class="th1c">TASK HEADING 9</h3>
+            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"
+                style="margin-left:450px;margin-top:30px">
+            </iframe>
+
+        </div>
+        <button type="button" style="margin-left:1080px;margin-top:45px">Next</button>
+    </div>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "150px";
+            document.getElementById("th1").style.marginLeft = "150px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("th1").style.marginLeft = "0";
+        }
+    </script>
+</body>
+
+</html>
